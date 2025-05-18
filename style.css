@@ -1,0 +1,164 @@
+
+:root {
+  --backgound-color: #222831;
+  --card-color: #393E46;
+  --text-color: #DFD0B8;
+  --seconday-color: #948979;
+  --border-color: rgba(94, 89, 82, 0.795);
+  --acent-color: #1363a5;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--backgound-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: var(--text-color);
+}
+
+
+.card{
+    background: var(--card-color);
+    padding: 30px 20px; 
+    flex: 1;
+    max-width: 400px;
+    margin: 8px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    box-shadow: inset 3px 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h1{
+    text-align: center;
+   
+    font-size: 24px;
+}
+
+.password-display{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.password-display input{
+     width: 100%;
+     padding: 10px 40px 10px 8px; 
+     background-color: var(--backgound-color);
+     border: 1px solid var(--border-color);
+     border-radius: 10px;
+     outline: none;
+     color: var(--text-color);
+     font-size: 18px;
+}
+
+.password-display input:focus {
+   outline: 1px solid #868484d7; 
+}
+
+.password-display button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: var(--card-color);
+    border: 1px solid  var(--border-color);
+    color: var(--text-color);
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.password-display button svg {
+    width: 20px;
+    height: 20px;
+
+}
+
+.options .length-input div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--seconday-color);
+} 
+
+.options .length-input input {
+    width: 100%;
+}
+
+.divider {
+    border-color: var(--border-color);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.options .option-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    background-color: var(--acent-color);
+    color: var(--text-color);
+    border:none;
+    padding: 10px 0px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+
+}
+
+.btn:active {
+  transform: scale(.97);
+
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top:20px;
+}
+
+
+.range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  background: #636060;
+  border-radius: 15px;
+  outline: none;
+  margin: 10px 0;
+}
+
+/* Track for Chrome, Safari, Edge */
+.range::-webkit-slider-runnable-track {
+  height: 8px;
+  background: red;
+  border-radius: 5px;
+}
+
+/* Thumb for Chrome, Safari, Edge */
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+}
