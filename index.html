@@ -43,25 +43,25 @@
           <p class="range-display">10</p>
 
           </div>
-          <input type="range" class="range" min="6" max="14" />
-
+         
+       <input type="range" class="range" name="range" min="6" max="14" />
         </div>
         <div class="option-list">
-         
+           
           <div>
-            <input type="checkbox"  id="uppercase"/>
+            <input type="checkbox"   id="uppercase"  name="uppercase"/>
             <label for="uppercase">Uppercase</label>
           </div>
           <div>
-            <input type="checkbox"  id="lowercase"/>
+            <input type="checkbox"  id="lowercase" name="lowercase"/>
             <label for="lowercase">lowercase</label>
           </div>
           <div>
-            <input type="checkbox"  id="numbers" />
+            <input type="checkbox"  id="numbers" name="numbers" />
             <label for="number">Number</label>
           </div>
           <div>
-            <input type="checkbox"  id="symbols"/>
+            <input type="checkbox" id="symbols" data-project-id="9888" name="symbols"/>
             <label for="symbols">Symbols</label>
           </div>
 
@@ -71,7 +71,8 @@
 
       </div>
     </div>
-
-    <script src="app.js"></script>
+    
+    <script src="app.js" type="module"></script>
+    
   </body>
 </html>

@@ -139,7 +139,7 @@ body{
 }
 
 
-.range {
+/* .range {
   -webkit-appearance: none;
   width: 100%;
   height: 4px;
@@ -149,16 +149,14 @@ body{
   margin: 10px 0;
 }
 
-/* Track for Chrome, Safari, Edge */
-.range::-webkit-slider-runnable-track {
+/* .range::-webkit-slider-runnable-track {
   height: 8px;
   background: red;
   border-radius: 5px;
-}
+} */
 
-/* Thumb for Chrome, Safari, Edge */
-.range::-webkit-slider-thumb {
+/* .range::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   height: 20px;
-}
+} */ 
